@@ -1,0 +1,6 @@
+framework module Pods_walkDeliveryBusiness {
+  umbrella header "Pods-walkDeliveryBusiness-umbrella.h"
+
+  export *
+  module * { export * }
+}
