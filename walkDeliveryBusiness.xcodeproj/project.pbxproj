@@ -14,7 +14,7 @@
 		557089BC1F3DC1E70062D3FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 557089BB1F3DC1E70062D3FC /* Assets.xcassets */; };
 		557089BF1F3DC1E70062D3FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 557089BD1F3DC1E70062D3FC /* LaunchScreen.storyboard */; };
 		557089CA1F3DC1E70062D3FC /* walkDeliveryBusinessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557089C91F3DC1E70062D3FC /* walkDeliveryBusinessTests.swift */; };
-		557089D51F3DC2160062D3FC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 557089D41F3DC2160062D3FC /* GoogleService-Info.plist */; };
+		55C3878D1F4B053300ABD74C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55C3878C1F4B053300ABD74C /* GoogleService-Info.plist */; };
 		CFEEE2B4CF2FB2F58227B9FD /* Pods_walkDeliveryBusiness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A091280F6AE3EC17A4571B51 /* Pods_walkDeliveryBusiness.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +41,7 @@
 		557089C51F3DC1E70062D3FC /* walkDeliveryBusinessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = walkDeliveryBusinessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		557089C91F3DC1E70062D3FC /* walkDeliveryBusinessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = walkDeliveryBusinessTests.swift; sourceTree = "<group>"; };
 		557089CB1F3DC1E70062D3FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		557089D41F3DC2160062D3FC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Users/andrey/Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		55C3878C1F4B053300ABD74C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		86ABE415C60D5CA1937FEAA0 /* Pods-walkDeliveryBusiness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-walkDeliveryBusiness.debug.xcconfig"; path = "Pods/Target Support Files/Pods-walkDeliveryBusiness/Pods-walkDeliveryBusiness.debug.xcconfig"; sourceTree = "<group>"; };
 		A091280F6AE3EC17A4571B51 /* Pods_walkDeliveryBusiness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_walkDeliveryBusiness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD9ADE750A15640B4B222A11 /* Pods_walkDeliveryBusinessTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_walkDeliveryBusinessTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,7 +97,7 @@
 				557089BB1F3DC1E70062D3FC /* Assets.xcassets */,
 				557089BD1F3DC1E70062D3FC /* LaunchScreen.storyboard */,
 				557089C01F3DC1E70062D3FC /* Info.plist */,
-				557089D41F3DC2160062D3FC /* GoogleService-Info.plist */,
+				55C3878C1F4B053300ABD74C /* GoogleService-Info.plist */,
 			);
 			path = walkDeliveryBusiness;
 			sourceTree = "<group>";
@@ -223,7 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				557089BF1F3DC1E70062D3FC /* LaunchScreen.storyboard in Resources */,
-				557089D51F3DC2160062D3FC /* GoogleService-Info.plist in Resources */,
+				55C3878D1F4B053300ABD74C /* GoogleService-Info.plist in Resources */,
 				557089BC1F3DC1E70062D3FC /* Assets.xcassets in Resources */,
 				557089BA1F3DC1E70062D3FC /* Main.storyboard in Resources */,
 			);
@@ -549,6 +549,7 @@
 				557089D01F3DC1E70062D3FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		557089D11F3DC1E70062D3FC /* Build configuration list for PBXNativeTarget "walkDeliveryBusinessTests" */ = {
 			isa = XCConfigurationList;
@@ -557,6 +558,7 @@
 				557089D31F3DC1E70062D3FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
