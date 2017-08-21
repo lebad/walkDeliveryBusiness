@@ -91,6 +91,8 @@
 		557089B31F3DC1E70062D3FC /* walkDeliveryBusiness */ = {
 			isa = PBXGroup;
 			children = (
+				55C3878E1F4B06E900ABD74C /* Services */,
+				55C387901F4B071D00ABD74C /* Scenes */,
 				557089B41F3DC1E70062D3FC /* AppDelegate.swift */,
 				557089B61F3DC1E70062D3FC /* ViewController.swift */,
 				557089B81F3DC1E70062D3FC /* Main.storyboard */,
@@ -109,6 +111,28 @@
 				557089CB1F3DC1E70062D3FC /* Info.plist */,
 			);
 			path = walkDeliveryBusinessTests;
+			sourceTree = "<group>";
+		};
+		55C3878E1F4B06E900ABD74C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				55C3878F1F4B070500ABD74C /* AuthService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		55C3878F1F4B070500ABD74C /* AuthService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AuthService;
+			sourceTree = "<group>";
+		};
+		55C387901F4B071D00ABD74C /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 		65E5E91AED43596E20A6C2A7 /* Pods */ = {
