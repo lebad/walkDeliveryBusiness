@@ -8,8 +8,8 @@
 
 import UIKit
 
-class AuthSceneAssembly {
-	
+class AuthSceneAssembly: ViewConfigurable
+{
 	static func configureView() -> UIViewController {
 		let viewController = AuthViewController()
 		let interactor = AuthSceneInteractor()

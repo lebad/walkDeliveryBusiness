@@ -8,10 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		3B756702C7336620438F1272 /* Pods_walkDeliveryBusinessTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9ADE750A15640B4B222A11 /* Pods_walkDeliveryBusinessTests.framework */; };
+		5560F35C1F8CF8C000B439B6 /* ProductsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5560F35B1F8CF8C000B439B6 /* ProductsService.swift */; };
+		5560F35E1F8CF8F800B439B6 /* ProductServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5560F35D1F8CF8F800B439B6 /* ProductServiceProtocol.swift */; };
 		557089B51F3DC1E70062D3FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557089B41F3DC1E70062D3FC /* AppDelegate.swift */; };
 		557089BC1F3DC1E70062D3FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 557089BB1F3DC1E70062D3FC /* Assets.xcassets */; };
 		557089BF1F3DC1E70062D3FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 557089BD1F3DC1E70062D3FC /* LaunchScreen.storyboard */; };
 		557089CA1F3DC1E70062D3FC /* walkDeliveryBusinessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557089C91F3DC1E70062D3FC /* walkDeliveryBusinessTests.swift */; };
+		55C576401F9BE12F00F3F394 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C5763F1F9BE12F00F3F394 /* Product.swift */; };
+		55C576421F9BE22300F3F394 /* DictionaryConvertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C576411F9BE22200F3F394 /* DictionaryConvertable.swift */; };
+		55C576441F9BE8BB00F3F394 /* AddProductsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C576431F9BE8BB00F3F394 /* AddProductsCoordinator.swift */; };
+		55C576461F9BEADA00F3F394 /* AlertShowable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C576451F9BEADA00F3F394 /* AlertShowable.swift */; };
+		55C576481F9BF4F200F3F394 /* AddProductAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C576471F9BF4F200F3F394 /* AddProductAssembly.swift */; };
+		55C5764A1F9BF51400F3F394 /* ViewConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C576491F9BF51400F3F394 /* ViewConfigurable.swift */; };
+		55C5764C1F9BF5FE00F3F394 /* AddProductsInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C5764B1F9BF5FE00F3F394 /* AddProductsInterface.swift */; };
 		55CF54D41F8AA5A700C5AEBC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55CF54D31F8AA5A700C5AEBC /* GoogleService-Info.plist */; };
 		55CF54F01F8AAA0A00C5AEBC /* InitialFlowItemsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CF54DB1F8AA8E700C5AEBC /* InitialFlowItemsAssembly.swift */; };
 		55CF54F11F8AAA1000C5AEBC /* InitialFlowItemsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CF54DC1F8AA8E700C5AEBC /* InitialFlowItemsInteractor.swift */; };
@@ -34,8 +43,7 @@
 		55CF55021F8AAA5300C5AEBC /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CF54D71F8AA89700C5AEBC /* AuthService.swift */; };
 		55CF55031F8AAA5300C5AEBC /* AuthServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CF54D81F8AA89700C5AEBC /* AuthServiceProtocol.swift */; };
 		55CF55051F8AAA9A00C5AEBC /* ErrorEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CF55041F8AAA9100C5AEBC /* ErrorEntity.swift */; };
-		55CF55081F8AAB4B00C5AEBC /* AddGoodsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CF55071F8AAB4B00C5AEBC /* AddGoodsViewController.swift */; };
-		55CF550F1F8AABE700C5AEBC /* DictionaryConvertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CF550A1F8AABDC00C5AEBC /* DictionaryConvertable.swift */; };
+		55CF55081F8AAB4B00C5AEBC /* AddProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CF55071F8AAB4B00C5AEBC /* AddProductsViewController.swift */; };
 		55CF55101F8AABE700C5AEBC /* FireBaseReferenceAccecable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CF550B1F8AABDC00C5AEBC /* FireBaseReferenceAccecable.swift */; };
 		55CF55111F8AABE700C5AEBC /* RootViewControllerAccecable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CF550C1F8AABDC00C5AEBC /* RootViewControllerAccecable.swift */; };
 		55CF55121F8AABE700C5AEBC /* TaskProgressShowable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CF550D1F8AABDC00C5AEBC /* TaskProgressShowable.swift */; };
@@ -58,6 +66,8 @@
 /* Begin PBXFileReference section */
 		3DB1083381D8A2643D7F38B4 /* Pods-walkDeliveryBusiness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-walkDeliveryBusiness.release.xcconfig"; path = "Pods/Target Support Files/Pods-walkDeliveryBusiness/Pods-walkDeliveryBusiness.release.xcconfig"; sourceTree = "<group>"; };
 		43F86079DBBD3D73D654DA50 /* Pods-walkDeliveryBusinessTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-walkDeliveryBusinessTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-walkDeliveryBusinessTests/Pods-walkDeliveryBusinessTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5560F35B1F8CF8C000B439B6 /* ProductsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductsService.swift; path = walkDeliveryBusiness/Services/ProductsService.swift; sourceTree = SOURCE_ROOT; };
+		5560F35D1F8CF8F800B439B6 /* ProductServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductServiceProtocol.swift; path = ../ProductServiceProtocol.swift; sourceTree = "<group>"; };
 		557089B11F3DC1E70062D3FC /* walkDeliveryBusiness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = walkDeliveryBusiness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		557089B41F3DC1E70062D3FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		557089BB1F3DC1E70062D3FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,6 +76,13 @@
 		557089C51F3DC1E70062D3FC /* walkDeliveryBusinessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = walkDeliveryBusinessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		557089C91F3DC1E70062D3FC /* walkDeliveryBusinessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = walkDeliveryBusinessTests.swift; sourceTree = "<group>"; };
 		557089CB1F3DC1E70062D3FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55C5763F1F9BE12F00F3F394 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		55C576411F9BE22200F3F394 /* DictionaryConvertable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DictionaryConvertable.swift; path = "../../../walkdelivery/walkdelivery/Global Protocols/DictionaryConvertable.swift"; sourceTree = "<group>"; };
+		55C576431F9BE8BB00F3F394 /* AddProductsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductsCoordinator.swift; sourceTree = "<group>"; };
+		55C576451F9BEADA00F3F394 /* AlertShowable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertShowable.swift; sourceTree = "<group>"; };
+		55C576471F9BF4F200F3F394 /* AddProductAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductAssembly.swift; sourceTree = "<group>"; };
+		55C576491F9BF51400F3F394 /* ViewConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConfigurable.swift; sourceTree = "<group>"; };
+		55C5764B1F9BF5FE00F3F394 /* AddProductsInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductsInterface.swift; sourceTree = "<group>"; };
 		55CF54D31F8AA5A700C5AEBC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		55CF54D71F8AA89700C5AEBC /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		55CF54D81F8AA89700C5AEBC /* AuthServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceProtocol.swift; sourceTree = "<group>"; };
@@ -88,8 +105,7 @@
 		55CF54ED1F8AA92000C5AEBC /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		55CF54EF1F8AA92000C5AEBC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		55CF55041F8AAA9100C5AEBC /* ErrorEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorEntity.swift; sourceTree = "<group>"; };
-		55CF55071F8AAB4B00C5AEBC /* AddGoodsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoodsViewController.swift; sourceTree = "<group>"; };
-		55CF550A1F8AABDC00C5AEBC /* DictionaryConvertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryConvertable.swift; sourceTree = "<group>"; };
+		55CF55071F8AAB4B00C5AEBC /* AddProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductsViewController.swift; sourceTree = "<group>"; };
 		55CF550B1F8AABDC00C5AEBC /* FireBaseReferenceAccecable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseReferenceAccecable.swift; sourceTree = "<group>"; };
 		55CF550C1F8AABDC00C5AEBC /* RootViewControllerAccecable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewControllerAccecable.swift; sourceTree = "<group>"; };
 		55CF550D1F8AABDC00C5AEBC /* TaskProgressShowable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskProgressShowable.swift; sourceTree = "<group>"; };
@@ -122,6 +138,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5560F35F1F8CF91E00B439B6 /* ProductsService */ = {
+			isa = PBXGroup;
+			children = (
+				55C5763F1F9BE12F00F3F394 /* Product.swift */,
+				5560F35B1F8CF8C000B439B6 /* ProductsService.swift */,
+				5560F35D1F8CF8F800B439B6 /* ProductServiceProtocol.swift */,
+			);
+			path = ProductsService;
+			sourceTree = "<group>";
+		};
+		5560F3601F8CFB0500B439B6 /* MoneyService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MoneyService;
+			sourceTree = "<group>";
+		};
 		557089A81F3DC1E70062D3FC = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +203,8 @@
 		55CF54D51F8AA88700C5AEBC /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				5560F3601F8CFB0500B439B6 /* MoneyService */,
+				5560F35F1F8CF91E00B439B6 /* ProductsService */,
 				55CF55041F8AAA9100C5AEBC /* ErrorEntity.swift */,
 				55CF54D61F8AA89700C5AEBC /* AuthService */,
 			);
@@ -188,7 +223,7 @@
 		55CF54D91F8AA8C200C5AEBC /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				55CF55061F8AAB1F00C5AEBC /* AddGoods */,
+				55CF55061F8AAB1F00C5AEBC /* AddProducts */,
 				55CF54E11F8AA92000C5AEBC /* Auth */,
 				55CF54DA1F8AA8E700C5AEBC /* InitialFlow */,
 			);
@@ -243,21 +278,27 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		55CF55061F8AAB1F00C5AEBC /* AddGoods */ = {
+		55CF55061F8AAB1F00C5AEBC /* AddProducts */ = {
 			isa = PBXGroup;
 			children = (
-				55CF55071F8AAB4B00C5AEBC /* AddGoodsViewController.swift */,
+				55C5764B1F9BF5FE00F3F394 /* AddProductsInterface.swift */,
+				55CF55071F8AAB4B00C5AEBC /* AddProductsViewController.swift */,
+				55C576431F9BE8BB00F3F394 /* AddProductsCoordinator.swift */,
+				55C576471F9BF4F200F3F394 /* AddProductAssembly.swift */,
 			);
+			name = AddProducts;
 			path = AddGoods;
 			sourceTree = "<group>";
 		};
 		55CF55091F8AABDC00C5AEBC /* Global Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				55CF550A1F8AABDC00C5AEBC /* DictionaryConvertable.swift */,
+				55C576411F9BE22200F3F394 /* DictionaryConvertable.swift */,
 				55CF550B1F8AABDC00C5AEBC /* FireBaseReferenceAccecable.swift */,
 				55CF550C1F8AABDC00C5AEBC /* RootViewControllerAccecable.swift */,
 				55CF550D1F8AABDC00C5AEBC /* TaskProgressShowable.swift */,
+				55C576451F9BEADA00F3F394 /* AlertShowable.swift */,
+				55C576491F9BF51400F3F394 /* ViewConfigurable.swift */,
 				55CF550E1F8AABDC00C5AEBC /* ViewModelCell.swift */,
 			);
 			path = "Global Protocols";
@@ -498,30 +539,38 @@
 			files = (
 				55CF55171F8AAC0700C5AEBC /* StringExtensions.swift in Sources */,
 				55CF55181F8AAC0700C5AEBC /* UIColorExtensions.swift in Sources */,
-				55CF550F1F8AABE700C5AEBC /* DictionaryConvertable.swift in Sources */,
 				55CF55101F8AABE700C5AEBC /* FireBaseReferenceAccecable.swift in Sources */,
 				55CF55111F8AABE700C5AEBC /* RootViewControllerAccecable.swift in Sources */,
+				55C576401F9BE12F00F3F394 /* Product.swift in Sources */,
 				55CF55121F8AABE700C5AEBC /* TaskProgressShowable.swift in Sources */,
+				5560F35C1F8CF8C000B439B6 /* ProductsService.swift in Sources */,
 				55CF55131F8AABE700C5AEBC /* ViewModelCell.swift in Sources */,
+				55C576421F9BE22300F3F394 /* DictionaryConvertable.swift in Sources */,
 				55CF55051F8AAA9A00C5AEBC /* ErrorEntity.swift in Sources */,
 				55CF55021F8AAA5300C5AEBC /* AuthService.swift in Sources */,
 				55CF55031F8AAA5300C5AEBC /* AuthServiceProtocol.swift in Sources */,
+				55C576461F9BEADA00F3F394 /* AlertShowable.swift in Sources */,
 				55CF55011F8AAA4B00C5AEBC /* LoginView.swift in Sources */,
 				55CF54FE1F8AAA4700C5AEBC /* EnterLoginViewModel.swift in Sources */,
 				55CF54FF1F8AAA4700C5AEBC /* ErrorViewModel.swift in Sources */,
+				55C5764A1F9BF51400F3F394 /* ViewConfigurable.swift in Sources */,
 				55CF55001F8AAA4700C5AEBC /* LoginViewModel.swift in Sources */,
+				55C576481F9BF4F200F3F394 /* AddProductAssembly.swift in Sources */,
 				55CF54F61F8AAA3000C5AEBC /* AuthSceneAssembly.swift in Sources */,
 				55CF54F71F8AAA3000C5AEBC /* AuthSceneInteractorInterface.swift in Sources */,
 				55CF54F81F8AAA3000C5AEBC /* AuthSceneIntercator.swift in Sources */,
 				55CF54F91F8AAA3000C5AEBC /* AuthScenePresenter.swift in Sources */,
-				55CF55081F8AAB4B00C5AEBC /* AddGoodsViewController.swift in Sources */,
+				55C576441F9BE8BB00F3F394 /* AddProductsCoordinator.swift in Sources */,
+				55CF55081F8AAB4B00C5AEBC /* AddProductsViewController.swift in Sources */,
 				55CF54FA1F8AAA3000C5AEBC /* AuthSceneRouter.swift in Sources */,
 				55CF54FB1F8AAA3000C5AEBC /* AuthSceneRouterInterface.swift in Sources */,
 				55CF54FC1F8AAA3000C5AEBC /* AuthViewController.swift in Sources */,
 				55CF54FD1F8AAA3000C5AEBC /* AuthViewInterface.swift in Sources */,
+				55C5764C1F9BF5FE00F3F394 /* AddProductsInterface.swift in Sources */,
 				55CF54F41F8AAA2300C5AEBC /* InitialFlowItemsRouter.swift in Sources */,
 				557089B51F3DC1E70062D3FC /* AppDelegate.swift in Sources */,
 				55CF54F01F8AAA0A00C5AEBC /* InitialFlowItemsAssembly.swift in Sources */,
+				5560F35E1F8CF8F800B439B6 /* ProductServiceProtocol.swift in Sources */,
 				55CF54F11F8AAA1000C5AEBC /* InitialFlowItemsInteractor.swift in Sources */,
 				55CF54F31F8AAA1700C5AEBC /* InitialFlowItemsPresenter.swift in Sources */,
 				55CF54F21F8AAA1400C5AEBC /* InitialFlowItemsInteractorInterface.swift in Sources */,

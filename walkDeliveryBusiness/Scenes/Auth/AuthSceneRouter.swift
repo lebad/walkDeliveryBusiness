@@ -13,7 +13,7 @@ class AuthSceneRouter: AuthSceneRouterInput, RootViewControllerAccecable {
 	func routeToNextScene() {
 		guard let currentNavigationController = rootViewController else { return }
 		
-		let displayedItemsVC = AddGoodsViewController()
+		let displayedItemsVC = AddProductAssembly.configureView()
 		currentNavigationController.pushViewController(displayedItemsVC, animated: true)
 	}
 }

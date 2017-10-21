@@ -12,6 +12,7 @@ target 'walkDeliveryBusiness' do
   pod 'Firebase/Auth', '~> 3.15.0'
   pod 'SnapKit', '~> 3.0'
   pod 'Kingfisher', '~> 3.0'
+  pod 'SwiftyJSON'
 
   target 'walkDeliveryBusinessTests' do
         inherit! :search_paths

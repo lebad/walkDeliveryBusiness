@@ -21,7 +21,7 @@ class InitialFlowItemsRouter: InitialFlowItemsRouterInput {
 	
 	func routeToDisplayedItemsScene() {
 		createWindow()
-		controllerToShow = AddGoodsViewController()
+		controllerToShow = AddProductAssembly.configureView()
 		showController()
 	}
 	
