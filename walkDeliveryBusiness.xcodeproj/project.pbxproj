@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3B756702C7336620438F1272 /* Pods_walkDeliveryBusinessTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9ADE750A15640B4B222A11 /* Pods_walkDeliveryBusinessTests.framework */; };
+		5504B0B41F9CCDFA00123D05 /* TableRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5504B0B31F9CCDFA00123D05 /* TableRepresentable.swift */; };
 		5560F35C1F8CF8C000B439B6 /* ProductsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5560F35B1F8CF8C000B439B6 /* ProductsService.swift */; };
 		5560F35E1F8CF8F800B439B6 /* ProductServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5560F35D1F8CF8F800B439B6 /* ProductServiceProtocol.swift */; };
 		557089B51F3DC1E70062D3FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557089B41F3DC1E70062D3FC /* AppDelegate.swift */; };
@@ -66,6 +67,7 @@
 /* Begin PBXFileReference section */
 		3DB1083381D8A2643D7F38B4 /* Pods-walkDeliveryBusiness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-walkDeliveryBusiness.release.xcconfig"; path = "Pods/Target Support Files/Pods-walkDeliveryBusiness/Pods-walkDeliveryBusiness.release.xcconfig"; sourceTree = "<group>"; };
 		43F86079DBBD3D73D654DA50 /* Pods-walkDeliveryBusinessTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-walkDeliveryBusinessTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-walkDeliveryBusinessTests/Pods-walkDeliveryBusinessTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5504B0B31F9CCDFA00123D05 /* TableRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableRepresentable.swift; sourceTree = "<group>"; };
 		5560F35B1F8CF8C000B439B6 /* ProductsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductsService.swift; path = walkDeliveryBusiness/Services/ProductsService.swift; sourceTree = SOURCE_ROOT; };
 		5560F35D1F8CF8F800B439B6 /* ProductServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductServiceProtocol.swift; path = ../ProductServiceProtocol.swift; sourceTree = "<group>"; };
 		557089B11F3DC1E70062D3FC /* walkDeliveryBusiness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = walkDeliveryBusiness.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -293,6 +295,7 @@
 		55CF55091F8AABDC00C5AEBC /* Global Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				5504B0B31F9CCDFA00123D05 /* TableRepresentable.swift */,
 				55C576411F9BE22200F3F394 /* DictionaryConvertable.swift */,
 				55CF550B1F8AABDC00C5AEBC /* FireBaseReferenceAccecable.swift */,
 				55CF550C1F8AABDC00C5AEBC /* RootViewControllerAccecable.swift */,
@@ -538,6 +541,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55CF55171F8AAC0700C5AEBC /* StringExtensions.swift in Sources */,
+				5504B0B41F9CCDFA00123D05 /* TableRepresentable.swift in Sources */,
 				55CF55181F8AAC0700C5AEBC /* UIColorExtensions.swift in Sources */,
 				55CF55101F8AABE700C5AEBC /* FireBaseReferenceAccecable.swift in Sources */,
 				55CF55111F8AABE700C5AEBC /* RootViewControllerAccecable.swift in Sources */,

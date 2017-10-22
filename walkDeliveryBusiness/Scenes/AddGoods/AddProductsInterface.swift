@@ -13,5 +13,6 @@ protocol AddProductsViewInput: class {
 }
 
 protocol AddProductsViewOutput: class {
+	func viewPrepared()
 	func add(_ product: Product)
 }

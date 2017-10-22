@@ -14,6 +14,8 @@ class AddProductsCoordinator: AddProductsViewOutput {
 	weak var view: AddProductsViewInput?
 	weak var alertView: AlertShowable?
 	
+	var products = [Product]()
+	
 	var taskProgressor: TaskProgressShowable?
 	
 	func add(_ product: Product) {
@@ -23,8 +25,42 @@ class AddProductsCoordinator: AddProductsViewOutput {
 			case .Failure():
 				self?.alertView?.show("Error occured")
 			case .Success(_ ):
-				return
+				self?.getProducts()
 			}
+			self?.taskProgressor?.showFinish()
 		}
+	}
+	
+	func viewPrepared() {
+		self.getProducts()
+	}
+	
+	private func getProducts() {
+		taskProgressor?.showStart()
+		productService?.getProducts() { [weak self] result in
+			switch result {
+			case .Failure():
+				self?.alertView?.show("Error occured")
+			case .Success(let products):
+				self?.products = products
+				self?.view?.show(products)
+			}
+			self?.taskProgressor?.showFinish()
+		}
+	}
+}
+
+extension AddProductsCoordinator: TableRepresentable {
+	
+	func numberOfRows() -> Int {
+		return products.count
+	}
+	
+	func viewModel(_ index: Int) -> ViewModelCellRepresentable {
+		return products[index] as! ViewModelCellRepresentable
+	}
+	
+	func didSelectRow(_ index: Int) {
+		
 	}
 }
