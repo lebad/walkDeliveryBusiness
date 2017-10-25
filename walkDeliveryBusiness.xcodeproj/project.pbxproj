@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3B756702C7336620438F1272 /* Pods_walkDeliveryBusinessTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9ADE750A15640B4B222A11 /* Pods_walkDeliveryBusinessTests.framework */; };
 		5504B0B41F9CCDFA00123D05 /* TableRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5504B0B31F9CCDFA00123D05 /* TableRepresentable.swift */; };
+		551668381FA0BB82001CBA6A /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551668371FA0BB82001CBA6A /* LocationManager.swift */; };
 		5560F35C1F8CF8C000B439B6 /* ProductsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5560F35B1F8CF8C000B439B6 /* ProductsService.swift */; };
 		5560F35E1F8CF8F800B439B6 /* ProductServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5560F35D1F8CF8F800B439B6 /* ProductServiceProtocol.swift */; };
 		557089B51F3DC1E70062D3FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557089B41F3DC1E70062D3FC /* AppDelegate.swift */; };
@@ -68,6 +69,7 @@
 		3DB1083381D8A2643D7F38B4 /* Pods-walkDeliveryBusiness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-walkDeliveryBusiness.release.xcconfig"; path = "Pods/Target Support Files/Pods-walkDeliveryBusiness/Pods-walkDeliveryBusiness.release.xcconfig"; sourceTree = "<group>"; };
 		43F86079DBBD3D73D654DA50 /* Pods-walkDeliveryBusinessTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-walkDeliveryBusinessTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-walkDeliveryBusinessTests/Pods-walkDeliveryBusinessTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5504B0B31F9CCDFA00123D05 /* TableRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableRepresentable.swift; sourceTree = "<group>"; };
+		551668371FA0BB82001CBA6A /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		5560F35B1F8CF8C000B439B6 /* ProductsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductsService.swift; path = walkDeliveryBusiness/Services/ProductsService.swift; sourceTree = SOURCE_ROOT; };
 		5560F35D1F8CF8F800B439B6 /* ProductServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductServiceProtocol.swift; path = ../ProductServiceProtocol.swift; sourceTree = "<group>"; };
 		557089B11F3DC1E70062D3FC /* walkDeliveryBusiness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = walkDeliveryBusiness.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,6 +142,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		551668361FA0BB1A001CBA6A /* LocationService */ = {
+			isa = PBXGroup;
+			children = (
+				551668371FA0BB82001CBA6A /* LocationManager.swift */,
+			);
+			path = LocationService;
+			sourceTree = "<group>";
+		};
 		5560F35F1F8CF91E00B439B6 /* ProductsService */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +215,7 @@
 		55CF54D51F8AA88700C5AEBC /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				551668361FA0BB1A001CBA6A /* LocationService */,
 				5560F3601F8CFB0500B439B6 /* MoneyService */,
 				5560F35F1F8CF91E00B439B6 /* ProductsService */,
 				55CF55041F8AAA9100C5AEBC /* ErrorEntity.swift */,
@@ -552,6 +563,7 @@
 				55C576421F9BE22300F3F394 /* DictionaryConvertable.swift in Sources */,
 				55CF55051F8AAA9A00C5AEBC /* ErrorEntity.swift in Sources */,
 				55CF55021F8AAA5300C5AEBC /* AuthService.swift in Sources */,
+				551668381FA0BB82001CBA6A /* LocationManager.swift in Sources */,
 				55CF55031F8AAA5300C5AEBC /* AuthServiceProtocol.swift in Sources */,
 				55C576461F9BEADA00F3F394 /* AlertShowable.swift in Sources */,
 				55CF55011F8AAA4B00C5AEBC /* LoginView.swift in Sources */,

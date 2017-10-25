@@ -50,6 +50,7 @@ class AddProductsViewController: UIViewController {
 	}
 	
 	func setupActivityIndicator() {
+		activityIndicator.translatesAutoresizingMaskIntoConstraints = false
 		self.view.addSubview(activityIndicator)
 		activityIndicator.snp.makeConstraints { make in
 			make.center.equalToSuperview()
