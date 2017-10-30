@@ -13,9 +13,9 @@ import SwiftyJSON
 
 class ProductsService: ProductServiceProtocol {
 	
-	private var fireBaseReference = FIRDatabase.database().reference()
-	private var firAuth: FIRAuth? = {
-		let auth = FIRAuth.auth()
+	private var fireBaseReference = Database.database().reference()
+	private var firAuth: Auth? = {
+		let auth = Auth.auth()
 		return auth
 	}()
 	
@@ -42,7 +42,7 @@ class ProductsService: ProductServiceProtocol {
 		}
 		
 		fireBaseReference.child("productsBySellers").child(userUID).observeSingleEvent(of: .value, with: { (snapshot) in
-			guard snapshot.hasChildren() == true, let snaps = snapshot.children.allObjects as? [FIRDataSnapshot] else {
+			guard snapshot.hasChildren() == true, let snaps = snapshot.children.allObjects as? [DataSnapshot] else {
 				completionHandler(.Failure())
 				return
 			}

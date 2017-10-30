@@ -13,8 +13,8 @@ class AuthService: AuthServiceProtocol {
 	
 	static let sharedInstance = AuthService()
 	
-	private var firAuth: FIRAuth? = {
-		let auth = FIRAuth.auth()
+	private var firAuth: Auth? = {
+		let auth = Auth.auth()
 		return auth
 	}()
 	

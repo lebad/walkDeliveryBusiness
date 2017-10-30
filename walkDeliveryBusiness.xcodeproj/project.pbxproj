@@ -160,13 +160,6 @@
 			path = ProductsService;
 			sourceTree = "<group>";
 		};
-		5560F3601F8CFB0500B439B6 /* MoneyService */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MoneyService;
-			sourceTree = "<group>";
-		};
 		557089A81F3DC1E70062D3FC = {
 			isa = PBXGroup;
 			children = (
@@ -216,7 +209,6 @@
 			isa = PBXGroup;
 			children = (
 				551668361FA0BB1A001CBA6A /* LocationService */,
-				5560F3601F8CFB0500B439B6 /* MoneyService */,
 				5560F35F1F8CF91E00B439B6 /* ProductsService */,
 				55CF55041F8AAA9100C5AEBC /* ErrorEntity.swift */,
 				55CF54D61F8AA89700C5AEBC /* AuthService */,

@@ -10,29 +10,30 @@ import Foundation
 import Firebase
 
 protocol FireBaseReferenceAccecable {
-	var fireBaseReferenceUser: FIRDatabaseReference? { get }
-	var fireBaseReferenceBusiness: FIRDatabaseReference? { get }
+	var fireBaseReferenceUser: DatabaseReference? { get }
+	var fireBaseReferenceBusiness: DatabaseReference? { get }
 }
 
-extension FireBaseReferenceAccecable {
-	
-	var fireBaseReferenceUser: FIRDatabaseReference? {
-		get {
-			guard let app = FIRApp(named: "User")
-				else { assert(false, "Cuuld not retrieve User app") }
-			let dataBase = FIRDatabase.database(app: app)
-			let reference = dataBase.reference()
-			return reference
-		}
-	}
-	
-	var fireBaseReferenceBusiness: FIRDatabaseReference? {
-		get {
-			guard let app = FIRApp(named: "Business")
-				else { assert(false, "Cuuld not retrieve User app") }
-			let dataBase = FIRDatabase.database(app: app)
-			let reference = dataBase.reference()
-			return reference
-		}
-	}
-}
+//extension FireBaseReferenceAccecable {
+//	
+//	var fireBaseReferenceUser: DatabaseReference? {
+//		get {
+//			guard let app = FirebaseApp(named: "User")
+//				else { assert(false, "Cuuld not retrieve User app") }
+//			let dataBase = Database.database(app: app)
+//			let reference = dataBase.reference()
+//			return reference
+//		}
+//	}
+//	
+//	var fireBaseReferenceBusiness: DatabaseReference? {
+//		get {
+//			guard let app = FIRApp(named: "Business")
+//				else { assert(false, "Cuuld not retrieve User app") }
+//			let dataBase = FIRDatabase.database(app: app)
+//			let reference = dataBase.reference()
+//			return reference
+//		}
+//	}
+//}
+
