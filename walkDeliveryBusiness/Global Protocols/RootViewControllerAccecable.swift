@@ -9,16 +9,16 @@
 import UIKit
 
 protocol RootViewControllerAccecable {
-	var rootViewController: UINavigationController? { get }
+	var rootViewController: UIViewController? { get }
 }
 
 extension RootViewControllerAccecable {
 	
-	var rootViewController: UINavigationController? {
+	var rootViewController: UIViewController? {
 		get {
 			let appDelegate = UIApplication.shared.delegate as? AppDelegate
 			let window = appDelegate?.window
-			return window?.rootViewController as? UINavigationController
+			return window?.rootViewController
 		}
 	}
 }

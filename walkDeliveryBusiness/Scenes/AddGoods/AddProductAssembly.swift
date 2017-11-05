@@ -11,6 +11,17 @@ import UIKit
 class AddProductAssembly: ViewConfigurable {
 	
 	static func configureView() -> UIViewController {
+		let addProductsViewController = configureAddProductsViewController()
+		addProductsViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
+		let mapViewController = MapViewController()
+		mapViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 1)
+		let tabBarViewController = UITabBarController()
+		let viewControllers = [addProductsViewController, mapViewController]
+		tabBarViewController.viewControllers = viewControllers.map{UINavigationController(rootViewController: $0)}
+		return tabBarViewController
+	}
+	
+	private static func configureAddProductsViewController() -> UIViewController {
 		let viewController = AddProductsViewController()
 		let coordinator = AddProductsCoordinator()
 		coordinator.productService = ProductsService()

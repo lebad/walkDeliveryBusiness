@@ -11,9 +11,9 @@ import UIKit
 class AuthSceneRouter: AuthSceneRouterInput, RootViewControllerAccecable {
 	
 	func routeToNextScene() {
-		guard let currentNavigationController = rootViewController else { return }
+		guard let currentViewController = rootViewController else { return }
 		
 		let displayedItemsVC = AddProductAssembly.configureView()
-		currentNavigationController.pushViewController(displayedItemsVC, animated: true)
+		currentViewController.present(displayedItemsVC, animated: true)
 	}
 }

@@ -10,6 +10,7 @@
 		3B756702C7336620438F1272 /* Pods_walkDeliveryBusinessTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9ADE750A15640B4B222A11 /* Pods_walkDeliveryBusinessTests.framework */; };
 		5504B0B41F9CCDFA00123D05 /* TableRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5504B0B31F9CCDFA00123D05 /* TableRepresentable.swift */; };
 		551668381FA0BB82001CBA6A /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551668371FA0BB82001CBA6A /* LocationManager.swift */; };
+		555A01111FAF28870083B621 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555A01101FAF28870083B621 /* MapViewController.swift */; };
 		5560F35C1F8CF8C000B439B6 /* ProductsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5560F35B1F8CF8C000B439B6 /* ProductsService.swift */; };
 		5560F35E1F8CF8F800B439B6 /* ProductServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5560F35D1F8CF8F800B439B6 /* ProductServiceProtocol.swift */; };
 		557089B51F3DC1E70062D3FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557089B41F3DC1E70062D3FC /* AppDelegate.swift */; };
@@ -70,6 +71,7 @@
 		43F86079DBBD3D73D654DA50 /* Pods-walkDeliveryBusinessTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-walkDeliveryBusinessTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-walkDeliveryBusinessTests/Pods-walkDeliveryBusinessTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5504B0B31F9CCDFA00123D05 /* TableRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableRepresentable.swift; sourceTree = "<group>"; };
 		551668371FA0BB82001CBA6A /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		555A01101FAF28870083B621 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		5560F35B1F8CF8C000B439B6 /* ProductsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductsService.swift; path = walkDeliveryBusiness/Services/ProductsService.swift; sourceTree = SOURCE_ROOT; };
 		5560F35D1F8CF8F800B439B6 /* ProductServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductServiceProtocol.swift; path = ../ProductServiceProtocol.swift; sourceTree = "<group>"; };
 		557089B11F3DC1E70062D3FC /* walkDeliveryBusiness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = walkDeliveryBusiness.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,6 +152,14 @@
 			path = LocationService;
 			sourceTree = "<group>";
 		};
+		555A010F1FAF28640083B621 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				555A01101FAF28870083B621 /* MapViewController.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
 		5560F35F1F8CF91E00B439B6 /* ProductsService */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +238,7 @@
 		55CF54D91F8AA8C200C5AEBC /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				555A010F1FAF28640083B621 /* Map */,
 				55CF55061F8AAB1F00C5AEBC /* AddProducts */,
 				55CF54E11F8AA92000C5AEBC /* Auth */,
 				55CF54DA1F8AA8E700C5AEBC /* InitialFlow */,
@@ -575,6 +586,7 @@
 				55CF54FC1F8AAA3000C5AEBC /* AuthViewController.swift in Sources */,
 				55CF54FD1F8AAA3000C5AEBC /* AuthViewInterface.swift in Sources */,
 				55C5764C1F9BF5FE00F3F394 /* AddProductsInterface.swift in Sources */,
+				555A01111FAF28870083B621 /* MapViewController.swift in Sources */,
 				55CF54F41F8AAA2300C5AEBC /* InitialFlowItemsRouter.swift in Sources */,
 				557089B51F3DC1E70062D3FC /* AppDelegate.swift in Sources */,
 				55CF54F01F8AAA0A00C5AEBC /* InitialFlowItemsAssembly.swift in Sources */,
