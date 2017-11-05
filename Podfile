@@ -7,14 +7,13 @@ target 'walkDeliveryBusiness' do
 
   # Pods for walkDeliveryBusiness
 
-  # pod 'Firebase/Core', '~> 3.15.0'
   pod 'Firebase/Database', '~> 4.0'
   pod 'Firebase/Auth', '~> 4.0'
   pod 'SnapKit', '~> 3.0'
   pod 'Kingfisher', '~> 3.0'
   pod 'SwiftyJSON'
-  # pod 'GeoFire', :path => '/Programming/geofire-objc'
   pod 'GeoFire', :git => 'https://github.com/firebase/geofire-objc.git'
+  pod 'GoogleMaps'
 
   target 'walkDeliveryBusinessTests' do
         inherit! :search_paths

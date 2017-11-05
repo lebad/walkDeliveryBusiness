@@ -7,9 +7,10 @@
 //
 
 import Foundation
+import CoreLocation
 
 protocol MapViewInput: class {
-	
+	func show(_ customerPosition: CLLocationCoordinate2D)
 }
 
 protocol MapViewOutput: ViewPreparable {

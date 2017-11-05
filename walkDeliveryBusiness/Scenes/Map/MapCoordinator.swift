@@ -27,10 +27,11 @@ class MapCoordinator: MapViewOutput {
 extension MapCoordinator: LocationManagerObserver {
 	
 	func didUpdate(_ location: CLLocationCoordinate2D) {
-		updateLocationService?.update(location) { result in
+		updateLocationService?.update(location) { [unowned self] result in
 			switch result {
 			case .success:
 				print("location sent: \(location)")
+				self.view?.show(location)
 			default:
 				break
 			}

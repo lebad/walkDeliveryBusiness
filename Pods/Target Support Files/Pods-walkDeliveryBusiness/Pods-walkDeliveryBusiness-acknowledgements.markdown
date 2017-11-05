@@ -256,6 +256,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
+## GoogleMaps
+
+Copyright 2017 Google
+
 ## GoogleToolboxForMac
 
 
