@@ -13,7 +13,7 @@ class AddProductAssembly: ViewConfigurable {
 	static func configureView() -> UIViewController {
 		let addProductsViewController = configureAddProductsViewController()
 		addProductsViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
-		let mapViewController = MapViewController()
+		let mapViewController = MapAssembly.configureView()
 		mapViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 1)
 		let tabBarViewController = UITabBarController()
 		let viewControllers = [addProductsViewController, mapViewController]

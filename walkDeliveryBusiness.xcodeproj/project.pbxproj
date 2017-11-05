@@ -11,6 +11,12 @@
 		5504B0B41F9CCDFA00123D05 /* TableRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5504B0B31F9CCDFA00123D05 /* TableRepresentable.swift */; };
 		551668381FA0BB82001CBA6A /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551668371FA0BB82001CBA6A /* LocationManager.swift */; };
 		555A01111FAF28870083B621 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555A01101FAF28870083B621 /* MapViewController.swift */; };
+		555A01131FAF39C80083B621 /* MapCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555A01121FAF39C80083B621 /* MapCoordinator.swift */; };
+		555A01151FAF3A210083B621 /* MapInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555A01141FAF3A210083B621 /* MapInterface.swift */; };
+		555A01171FAF3AF40083B621 /* ViewPreparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555A01161FAF3AF40083B621 /* ViewPreparable.swift */; };
+		555A01191FAF3B6A0083B621 /* MapAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555A01181FAF3B6A0083B621 /* MapAssembly.swift */; };
+		555A011C1FAF3DF60083B621 /* UpdateLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555A011B1FAF3DF60083B621 /* UpdateLocationService.swift */; };
+		555A011E1FAF3E5D0083B621 /* UpdateLocationServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555A011D1FAF3E5D0083B621 /* UpdateLocationServiceProtocol.swift */; };
 		5560F35C1F8CF8C000B439B6 /* ProductsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5560F35B1F8CF8C000B439B6 /* ProductsService.swift */; };
 		5560F35E1F8CF8F800B439B6 /* ProductServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5560F35D1F8CF8F800B439B6 /* ProductServiceProtocol.swift */; };
 		557089B51F3DC1E70062D3FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557089B41F3DC1E70062D3FC /* AppDelegate.swift */; };
@@ -72,6 +78,12 @@
 		5504B0B31F9CCDFA00123D05 /* TableRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableRepresentable.swift; sourceTree = "<group>"; };
 		551668371FA0BB82001CBA6A /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		555A01101FAF28870083B621 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		555A01121FAF39C80083B621 /* MapCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCoordinator.swift; sourceTree = "<group>"; };
+		555A01141FAF3A210083B621 /* MapInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInterface.swift; sourceTree = "<group>"; };
+		555A01161FAF3AF40083B621 /* ViewPreparable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPreparable.swift; sourceTree = "<group>"; };
+		555A01181FAF3B6A0083B621 /* MapAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAssembly.swift; sourceTree = "<group>"; };
+		555A011B1FAF3DF60083B621 /* UpdateLocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateLocationService.swift; sourceTree = "<group>"; };
+		555A011D1FAF3E5D0083B621 /* UpdateLocationServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateLocationServiceProtocol.swift; sourceTree = "<group>"; };
 		5560F35B1F8CF8C000B439B6 /* ProductsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductsService.swift; path = walkDeliveryBusiness/Services/ProductsService.swift; sourceTree = SOURCE_ROOT; };
 		5560F35D1F8CF8F800B439B6 /* ProductServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductServiceProtocol.swift; path = ../ProductServiceProtocol.swift; sourceTree = "<group>"; };
 		557089B11F3DC1E70062D3FC /* walkDeliveryBusiness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = walkDeliveryBusiness.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,9 +167,21 @@
 		555A010F1FAF28640083B621 /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				555A01141FAF3A210083B621 /* MapInterface.swift */,
 				555A01101FAF28870083B621 /* MapViewController.swift */,
+				555A01121FAF39C80083B621 /* MapCoordinator.swift */,
+				555A01181FAF3B6A0083B621 /* MapAssembly.swift */,
 			);
 			path = Map;
+			sourceTree = "<group>";
+		};
+		555A011A1FAF3DD30083B621 /* UpdateLocationService */ = {
+			isa = PBXGroup;
+			children = (
+				555A011D1FAF3E5D0083B621 /* UpdateLocationServiceProtocol.swift */,
+				555A011B1FAF3DF60083B621 /* UpdateLocationService.swift */,
+			);
+			path = UpdateLocationService;
 			sourceTree = "<group>";
 		};
 		5560F35F1F8CF91E00B439B6 /* ProductsService */ = {
@@ -218,6 +242,7 @@
 		55CF54D51F8AA88700C5AEBC /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				555A011A1FAF3DD30083B621 /* UpdateLocationService */,
 				551668361FA0BB1A001CBA6A /* LocationService */,
 				5560F35F1F8CF91E00B439B6 /* ProductsService */,
 				55CF55041F8AAA9100C5AEBC /* ErrorEntity.swift */,
@@ -316,6 +341,7 @@
 				55CF550D1F8AABDC00C5AEBC /* TaskProgressShowable.swift */,
 				55C576451F9BEADA00F3F394 /* AlertShowable.swift */,
 				55C576491F9BF51400F3F394 /* ViewConfigurable.swift */,
+				555A01161FAF3AF40083B621 /* ViewPreparable.swift */,
 				55CF550E1F8AABDC00C5AEBC /* ViewModelCell.swift */,
 			);
 			path = "Global Protocols";
@@ -560,9 +586,11 @@
 				55CF55101F8AABE700C5AEBC /* FireBaseReferenceAccecable.swift in Sources */,
 				55CF55111F8AABE700C5AEBC /* RootViewControllerAccecable.swift in Sources */,
 				55C576401F9BE12F00F3F394 /* Product.swift in Sources */,
+				555A011E1FAF3E5D0083B621 /* UpdateLocationServiceProtocol.swift in Sources */,
 				55CF55121F8AABE700C5AEBC /* TaskProgressShowable.swift in Sources */,
 				5560F35C1F8CF8C000B439B6 /* ProductsService.swift in Sources */,
 				55CF55131F8AABE700C5AEBC /* ViewModelCell.swift in Sources */,
+				555A01131FAF39C80083B621 /* MapCoordinator.swift in Sources */,
 				55C576421F9BE22300F3F394 /* DictionaryConvertable.swift in Sources */,
 				55CF55051F8AAA9A00C5AEBC /* ErrorEntity.swift in Sources */,
 				55CF55021F8AAA5300C5AEBC /* AuthService.swift in Sources */,
@@ -575,18 +603,22 @@
 				55C5764A1F9BF51400F3F394 /* ViewConfigurable.swift in Sources */,
 				55CF55001F8AAA4700C5AEBC /* LoginViewModel.swift in Sources */,
 				55C576481F9BF4F200F3F394 /* AddProductAssembly.swift in Sources */,
+				555A01151FAF3A210083B621 /* MapInterface.swift in Sources */,
 				55CF54F61F8AAA3000C5AEBC /* AuthSceneAssembly.swift in Sources */,
 				55CF54F71F8AAA3000C5AEBC /* AuthSceneInteractorInterface.swift in Sources */,
 				55CF54F81F8AAA3000C5AEBC /* AuthSceneIntercator.swift in Sources */,
 				55CF54F91F8AAA3000C5AEBC /* AuthScenePresenter.swift in Sources */,
+				555A01191FAF3B6A0083B621 /* MapAssembly.swift in Sources */,
 				55C576441F9BE8BB00F3F394 /* AddProductsCoordinator.swift in Sources */,
 				55CF55081F8AAB4B00C5AEBC /* AddProductsViewController.swift in Sources */,
 				55CF54FA1F8AAA3000C5AEBC /* AuthSceneRouter.swift in Sources */,
 				55CF54FB1F8AAA3000C5AEBC /* AuthSceneRouterInterface.swift in Sources */,
 				55CF54FC1F8AAA3000C5AEBC /* AuthViewController.swift in Sources */,
+				555A01171FAF3AF40083B621 /* ViewPreparable.swift in Sources */,
 				55CF54FD1F8AAA3000C5AEBC /* AuthViewInterface.swift in Sources */,
 				55C5764C1F9BF5FE00F3F394 /* AddProductsInterface.swift in Sources */,
 				555A01111FAF28870083B621 /* MapViewController.swift in Sources */,
+				555A011C1FAF3DF60083B621 /* UpdateLocationService.swift in Sources */,
 				55CF54F41F8AAA2300C5AEBC /* InitialFlowItemsRouter.swift in Sources */,
 				557089B51F3DC1E70062D3FC /* AppDelegate.swift in Sources */,
 				55CF54F01F8AAA0A00C5AEBC /* InitialFlowItemsAssembly.swift in Sources */,

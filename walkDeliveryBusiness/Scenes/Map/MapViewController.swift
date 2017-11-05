@@ -9,9 +9,17 @@
 import UIKit
 
 class MapViewController: UIViewController {
+	
+	var output: MapViewOutput?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-		view.backgroundColor = UIColor.red
+		view.backgroundColor = UIColor.white
+		
+		output?.viewPrepared()
     }
+}
+
+extension MapViewController: MapViewInput {
+	
 }

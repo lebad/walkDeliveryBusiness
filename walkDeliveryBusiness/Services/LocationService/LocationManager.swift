@@ -9,6 +9,13 @@
 import Foundation
 import CoreLocation
 
+protocol LocationManagerInput: class {
+	func addObserver(observer: LocationManagerObserver)
+	func removeObserver(observer: LocationManagerObserver)
+	func startUpdatingLocation()
+	func stopUpdatingLocation()
+}
+
 protocol LocationManagerObserver: class {
 	func didUpdate(_ location: CLLocationCoordinate2D)
 	func didAuthFail()
@@ -20,7 +27,7 @@ fileprivate enum LocationManagerAuthStatus: Int32 {
 	case success
 }
 
-class LocationManager: NSObject {
+class LocationManager: NSObject, LocationManagerInput {
 	
 	static var singleton = LocationManager()
 	

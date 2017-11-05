@@ -12,7 +12,6 @@ protocol AddProductsViewInput: class {
 	func show(_ products:[Product])
 }
 
-protocol AddProductsViewOutput: class {
-	func viewPrepared()
+protocol AddProductsViewOutput: ViewPreparable {
 	func add(_ product: Product)
 }

@@ -57,7 +57,7 @@ extension AddProductsCoordinator: TableRepresentable {
 	}
 	
 	func viewModel(_ index: Int) -> ViewModelCellRepresentable {
-		return products[index] as! ViewModelCellRepresentable
+		return products[index] as ViewModelCellRepresentable
 	}
 	
 	func didSelectRow(_ index: Int) {
