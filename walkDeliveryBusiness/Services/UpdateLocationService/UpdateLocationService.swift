@@ -26,10 +26,10 @@ class UpdateLocationService: UpdateLocationServiceProtocol {
 			return
 		}
 		
-		let reference = fireBaseReference.child("consumersInfo").child(userUID)
+		let reference = fireBaseReference.child("consumersLocations")
 		let geofire = GeoFire(firebaseRef: reference)
 		let locationToSend = CLLocation(latitude: location.latitude, longitude: location.longitude)
-		geofire?.setLocation(locationToSend, forKey: "location") { error in
+		geofire?.setLocation(locationToSend, forKey: userUID) { error in
 			if error != nil {
 				completionHandler(.failure)
 			} else {
